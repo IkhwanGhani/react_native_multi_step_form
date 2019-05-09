@@ -105,11 +105,11 @@ class App extends Component {
               flexDirection: "row"
             }}
           >
-            {/* <View style={{ flex: 1, justifyContent: 'center' }}>
-                            <TouchableOpacity onPress={() => this.props.navigation.navigate('TaskListScreen')}>
-                                <Ionicons name="md-arrow-back" size={24} style={{ color: '#fff' }} />
-                            </TouchableOpacity>
-                        </View> */}
+            <View style={{ flex: 1, justifyContent: "center" }}>
+              <TouchableOpacity>
+                <Text style={{ color: "#fff", textAlign: "left" }} />
+              </TouchableOpacity>
+            </View>
             <View style={{ flex: 5 }}>
               <Text
                 style={{
@@ -439,7 +439,7 @@ class App extends Component {
               console.log("OK Pressed"),
               this.toggleStep3(false),
               this.toggleStep2(false),
-              navigation.navigate("TaskListScreen"),
+              // navigation.navigate("Home"),
               this.buildJSON()
             ]
           }
@@ -449,10 +449,6 @@ class App extends Component {
     }
   }
   buildJSON = () => {
-    // let tmpDoc = { ...this.state.input };
-    // console.log(`state - job request: ${JSON.stringify(this.state.input, null, "    ")}`);
-    // return;
-    this.props.onSubmit(this.state.input);
     this.setState({
       input: {
         location: "",
@@ -464,8 +460,6 @@ class App extends Component {
       },
       imageUpload: []
     });
-    // this.props.onSubmit(tmpDoc);
-    // addJob(tmpDoc)();
   };
 
   //Modal
@@ -635,9 +629,6 @@ class App extends Component {
           </View>
           <Content>
             <Form>
-              {/* <View style={{ marginVertical: 5, marginHorizontal: 15 }}>
-                                    <Label style={styles.formLabel}>Defect Image</Label>
-                                </View> */}
               <TouchableOpacity
                 onPress={() => this.togglePickerSelection(true)}
               >
