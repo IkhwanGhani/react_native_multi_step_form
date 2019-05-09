@@ -34,6 +34,7 @@ allprojects {
 
 ## Reference
 - https://facebook.github.io/react-native/
+- https://github.com/GeekyAnts/NativeBase
 - https://github.com/react-native-community/react-native-camera
 - https://github.com/jeanpan/react-native-camera-roll-picker
 - https://github.com/wassgha/react-native-fullwidth-image
