@@ -1,4 +1,4 @@
-# React Native Add Photo
+# React Native Multiple Step Form
 
 ## Installation
 1. ``` npm install ```
